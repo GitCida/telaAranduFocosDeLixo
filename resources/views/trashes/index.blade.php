@@ -10,21 +10,20 @@
 <body class="bg-gray-100 font-sans">
 
     <!-- TOPO -->
-    <header class="w-full bg-white shadow flex items-center justify-between px-8 py-4">
-        <div class="flex items-center gap-3">
-            <img src="/images/logo.png" class="h-10" alt="Arandu">
-            <h1 class="text-2xl font-bold text-green-700">ARANDU</h1>
+    <header class="flex items-center justify-between px-8 py-4 bg-white shadow">
+        <div class="flex items-center space-x-2">
+          <img src="{{ asset('images/logoAranduVerde.png') }}" alt="Logo Arandu vermelha" class="h-10">
         </div>
-
-        <nav class="flex items-center gap-8 font-semibold text-green-700">
-            <a href="#" class="hover:text-green-900">GALERIA</a>
-            <a href="#" class="hover:text-green-900">LOGOUT</a>
-            <a href="#" class="hover:text-green-900">DASHBOARD</a>
-            <a href="#" class="hover:text-green-900">SOBRE</a>
-
-            <img src="/images/user.png" class="w-12 h-12 rounded-full border-2 border-green-700" alt="Perfil">
+        
+        <nav class="flex items-center space-x-6 text-sm font-medium text-[#6C0D0E]">
+          <a href="#" class="hover:text-[#983132]">GALERIA</a>
+          <a href="#" class="hover:text-[#983132]">LOGOUT</a>
+          <a href="#" class="hover:text-[#983132]">DASHBOARD</a>
+          <a href="#" class="hover:text-[#983132]">SOBRE</a>
+          <div class="w-10 h-10 rounded-full bg-gray-300"></div>
         </nav>
-    </header>
+
+      </header>
 
     <div class="flex">
 
