@@ -44,7 +44,7 @@
                 QUEIMADAS
               </button>
               <button class="bg-[#6C0D0E] hover:bg-[#983132] text-white text-[22px] font-bold px-12 py-2 w-1/2 rounded-[5px]">
-                FOCOS DE LIXO
+                <a href="{{ route('trashes.index') }}">FOCOS DE LIXO</a>
               </button>
             </div>
           </div>

@@ -15,11 +15,11 @@
           <img src="{{ asset('images/logoAranduVerde.png') }}" alt="Logo Arandu vermelha" class="h-10">
         </div>
         
-        <nav class="flex items-center space-x-6 text-sm font-medium text-[#6C0D0E]">
-          <a href="#" class="hover:text-[#983132]">GALERIA</a>
-          <a href="#" class="hover:text-[#983132]">LOGOUT</a>
-          <a href="#" class="hover:text-[#983132]">DASHBOARD</a>
-          <a href="#" class="hover:text-[#983132]">SOBRE</a>
+        <nav class="flex items-center space-x-6 text-sm font-medium text-[#386641]">
+          <a href="#" class="hover:text-[#569D64]">GALERIA</a>
+          <a href="#" class="hover:text-[#569D64]">LOGOUT</a>
+          <a href="#" class="hover:text-[#569D64]">DASHBOARD</a>
+          <a href="#" class="hover:text-[#569D64]">SOBRE</a>
           <div class="w-10 h-10 rounded-full bg-gray-300"></div>
         </nav>
 
@@ -36,13 +36,13 @@
             </button>
 
             <!-- Botão incidências -->
-            <button class="w-full bg-green-700 text-white py-3 rounded shadow font-bold">
+            <button class="w-full bg-[#414D39] text-white py-3 rounded shadow font-bold">
                 INCIDÊNCIAS
             </button>
 
             <!-- Filtro -->
             <div class="mt-4">
-                <button class="w-full bg-green-600 text-white py-2 rounded font-semibold flex items-center justify-center gap-2">
+                <button class="w-full bg-[#5E8845] text-white py-2 rounded font-semibold flex items-center justify-center gap-2">
                     <span class="text-lg">⚙️</span> FILTRAR
                 </button>
             </div>
@@ -52,17 +52,17 @@
 
                 <div class="bg-white rounded shadow p-4">
                     <p class="font-bold text-gray-700">TOTAL DE DENÚNCIAS</p>
-                    <p class="text-green-700 font-extrabold text-xl mt-2">10.657</p>
+                    <p class="text-[#629956] font-extrabold text-xl mt-2">10.657</p>
                 </div>
 
                 <div class="bg-white rounded shadow p-4">
                     <p class="font-bold text-gray-700">MÊS COM MAIS DENÚNCIAS</p>
-                    <p class="text-green-700 font-extrabold text-xl mt-2">DEZEMBRO - 2025</p>
+                    <p class="text-[#629956] font-extrabold text-xl mt-2">DEZEMBRO - 2025</p>
                 </div>
 
                 <div class="bg-white rounded shadow p-4">
                     <p class="font-bold text-gray-700">MÊS COM MENOS DENÚNCIAS</p>
-                    <p class="text-green-700 font-extrabold text-xl mt-2">JANEIRO - 2025</p>
+                    <p class="text-[#629956] font-extrabold text-xl mt-2">JANEIRO - 2025</p>
                 </div>
 
             </div>
@@ -73,7 +73,7 @@
         <main class="flex-1 p-10">
 
             <!-- Título -->
-            <h2 class="bg-green-700 text-white font-bold text-xl text-center py-3 rounded shadow mb-6">
+            <h2 class="bg-[#6A994E] text-white font-bold text-xl text-center py-3 rounded shadow mb-6">
                 RELATÓRIOS DE DENÚNCIAS
             </h2>
 
