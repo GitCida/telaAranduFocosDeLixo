@@ -14,6 +14,11 @@ return new class extends Migration
         Schema::create('trashes', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('address');
+            $table->text('description');
+            $table->string('level');
+            $table->date('date');
+            $table->time('hour');
         });
     }
 

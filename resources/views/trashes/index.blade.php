@@ -7,19 +7,19 @@
     <title>Dashboard Arandu</title>
 </head>
 
-<body class="bg-gray-100 font-sans">
+<body class="bg-[#F6F6F6] font-sans">
 
     <!-- TOPO -->
     <header class="flex items-center justify-between px-8 py-4 bg-white shadow">
         <div class="flex items-center space-x-2">
-          <img src="{{ asset('images/logoAranduVerde.png') }}" alt="Logo Arandu vermelha" class="h-10">
+          <img src="{{ asset('images/logoAranduVermelha.svg') }}" alt="Logo Arandu vermelha" class="h-10">
         </div>
         
-        <nav class="flex items-center space-x-6 text-sm font-medium text-[#386641]">
-          <a href="#" class="hover:text-[#569D64]">GALERIA</a>
-          <a href="#" class="hover:text-[#569D64]">LOGOUT</a>
-          <a href="#" class="hover:text-[#569D64]">DASHBOARD</a>
-          <a href="#" class="hover:text-[#569D64]">SOBRE</a>
+        <nav class="flex items-center space-x-6 text-sm font-medium text-[#6C0D0E]">
+          <a href="#" class="hover:text-[#983132]">GALERIA</a>
+          <a href="#" class="hover:text-[#983132]">LOGOUT</a>
+          <a href="#" class="hover:text-[#983132]">DASHBOARD</a>
+          <a href="#" class="hover:text-[#983132]">SOBRE</a>
           <div class="w-10 h-10 rounded-full bg-gray-300"></div>
         </nav>
 
@@ -28,22 +28,22 @@
     <div class="flex">
 
         <!-- MENU LATERAL -->
-        <aside class="w-72 bg-gray-200 px-6 py-8 min-h-screen">
+        <aside class="w-200 px-6 py-8 min-h-screen">
 
             <!-- Ícone voltar -->
-            <button class="flex items-center gap-2 text-green-700 font-semibold mb-6">
-                <span class="text-3xl">&larr;</span>
+            <button class="flex items-center gap-2 text-[#F5F2EC] bg-[#6C0D0E] rounded-full font-semibold mb-6 p-2">
+                <img class="flex items-center" src="{{ asset('images/iconeSeta.svg') }}" alt="Icone de seta">
             </button>
 
             <!-- Botão incidências -->
-            <button class="w-full bg-[#414D39] text-white py-3 rounded shadow font-bold">
+            <button class="w-full bg-[#6C0D0E] text-white py-3 rounded-md shadow font-bold">
                 INCIDÊNCIAS
             </button>
 
             <!-- Filtro -->
             <div class="mt-4">
-                <button class="w-full bg-[#5E8845] text-white py-2 rounded font-semibold flex items-center justify-center gap-2">
-                    <span class="text-lg">⚙️</span> FILTRAR
+                <button class="w-full bg-[#A45006] text-white rounded-md font-semibold flex items-center justify-center gap-2">
+                    <img src="{{ asset('images/iconeFiltrar.svg') }}" alt="Icone de filtrar"> FILTRAR
                 </button>
             </div>
 
@@ -51,18 +51,23 @@
             <div class="mt-6 space-y-4">
 
                 <div class="bg-white rounded shadow p-4">
-                    <p class="font-bold text-gray-700">TOTAL DE DENÚNCIAS</p>
-                    <p class="text-[#629956] font-extrabold text-xl mt-2">10.657</p>
+                    <p class="font-bold text-[#6C0D0E]">TOTAL DE DENÚNCIAS</p>
+                    <p class="text-[#A45006] font-extrabold text-xl mt-2">10.657</p>
                 </div>
 
                 <div class="bg-white rounded shadow p-4">
-                    <p class="font-bold text-gray-700">MÊS COM MAIS DENÚNCIAS</p>
-                    <p class="text-[#629956] font-extrabold text-xl mt-2">DEZEMBRO - 2025</p>
+                    <p class="font-bold text-[#6C0D0E]">MÊS COM MAIS DENÚNCIAS</p>
+                    <p class="text-[#A45006] font-extrabold text-xl mt-2">DEZEMBRO - 2025</p>
                 </div>
 
                 <div class="bg-white rounded shadow p-4">
-                    <p class="font-bold text-gray-700">MÊS COM MENOS DENÚNCIAS</p>
-                    <p class="text-[#629956] font-extrabold text-xl mt-2">JANEIRO - 2025</p>
+                    <p class="font-bold text-[#6C0D0E]">MÊS COM MENOS DENÚNCIAS</p>
+                    <p class="text-[#A45006] font-extrabold text-xl mt-2">JANEIRO - 2025</p>
+                </div>
+
+                <div class="bg-white rounded shadow p-4">
+                    <p class="font-bold text-[#6C0D0E]">NÍVEL DE QUEIMADAS</p>
+                    <p class="text-[#A45006] font-extrabold text-xl mt-2">[Aqui tem um gráfico]</p>
                 </div>
 
             </div>
@@ -73,32 +78,38 @@
         <main class="flex-1 p-10">
 
             <!-- Título -->
-            <h2 class="bg-[#6A994E] text-white font-bold text-xl text-center py-3 rounded shadow mb-6">
+            <h2 class="bg-[#A45006] text-white font-bold text-xl text-center py-3 rounded shadow mb-6">
                 RELATÓRIOS DE DENÚNCIAS
             </h2>
 
             <!-- Tabela -->
             <div class="overflow-x-auto">
-                <table class="w-full bg-white shadow rounded-lg border border-gray-300">
-                    <thead class="bg-gray-100">
+                <table class="w-full bg-white shadow rounded-lg border border-black">
+                    <thead class="bg-white">
                         <tr class="border-b">
-                            <th class="p-3 text-left font-semibold text-gray-700">ENDEREÇO</th>
-                            <th class="p-3 text-left font-semibold text-gray-700">DESCRIÇÃO</th>
-                            <th class="p-3 text-left font-semibold text-gray-700">DATA</th>
-                            <th class="p-3 text-left font-semibold text-gray-700">HORA</th>
-                            <th class="p-3 text-left font-semibold text-gray-700">FOTO</th>
+                            <th class="p-3 text-left font-semibold text-[#6C0D0E]">ENDEREÇO</th>
+                            <th class="p-3 text-left font-semibold text-[#6C0D0E]">DESCRIÇÃO</th>
+                            <th class="p-3 text-left font-semibold text-[#6C0D0E]">NÍVEL</th>
+                            <th class="p-3 text-left font-semibold text-[#6C0D0E]">DATA</th>
+                            <th class="p-3 text-left font-semibold text-[#6C0D0E]">HORA</th>
+                            <th class="p-3 text-left font-semibold text-[#6C0D0E]">FOTO</th>
                         </tr>
                     </thead>
 
                     <tbody>
+                        <!-- trocar pelos nomes que tiverem no banco de dados -->
                         @foreach($trashes as $trash)
                         <tr class="border-b hover:bg-gray-50">
                             <td class="p-3">{{ $trash->address }}</td>
                             <td class="p-3">{{ $trash->description }}</td>
+                            <td class="p-3">{{ $trash->level }}</td>
                             <td class="p-3">{{ $trash->date }}</td>
                             <td class="p-3">{{ $trash->hour }}</td>
-                            <td class="p-3 text-green-700 underline cursor-pointer">
-                                <a href="{{ asset('storage/' . $trash->image) }}">Ver imagem 📷</a>
+                            <td class="p-3 text-black underline cursor-pointer">
+                                <button class="flex flex-col items-center">
+                                    <img class="w-6 h-6" src="{{ asset('images/iconeImagens.svg') }}" alt="icone de imagens">
+                                    <a href="">Ver imagem</a>
+                                </button>
                             </td>
                         </tr>
                             @endforeach

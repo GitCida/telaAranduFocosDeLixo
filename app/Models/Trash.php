@@ -6,5 +6,11 @@ use Illuminate\Database\Eloquent\Model;
 
 class Trash extends Model
 {
-    //
+    protected $fillable = [
+        'address',
+        'description',
+        'level',
+        'date',
+        'hour',
+    ];
 }
